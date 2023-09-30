@@ -35,7 +35,3 @@ export type LoaderData<TLoaderFn extends LoaderFunction> = Awaited<
 > extends Response | infer D
   ? D
   : never;
-
-// export type ActionData<TActionFn extends ActionFunction> =
-//   | Awaited<ReturnType<TActionFn>>
-//   | undefined;

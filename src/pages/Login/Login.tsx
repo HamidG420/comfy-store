@@ -18,7 +18,7 @@ const Login = () => {
         password: 'secret',
       });
       dispatch(loginUser(response.data));
-      toast.success('Welcome guest user');
+      toast.success('Welcome back guest user!');
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve(navigate(location.state?.from || '/'));

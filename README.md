@@ -1,6 +1,7 @@
 # Comfy Store
 
 Project in Action:
+[Comfy Store](https://comfy-store-ts.netlify.app)
 
 ## Introduction
 
@@ -56,6 +57,6 @@ Visit url [http://localhost:5173] to interact with the app.
 
 - React query is used for caching the responses and improving the user experience by offering almost seamless browsing through the website.
 
-- It's a front-end project. I didn't develop the back-end and have no information about the implementation of it. However,[Here](https://documenter.getpostman.com/view/18152321/2s9Xy5KpTi) you can read a brief documentation provided by John Smilga, The original contributor of the project, for the API.
+- It's a front-end project. I didn't develop the back-end and have no information about the implementation of it. However, [Here](https://documenter.getpostman.com/view/18152321/2s9Xy5KpTi) you can read a brief documentation provided by John Smilga, The original contributor of the project, for the API.
 
 This is just a demo project for educational purposes and heavily based on [React 18 Tutorial and Projects Udemy Course](https://www.udemy.com/course/react-tutorial-and-projects-course) Comfy Store project. You can visit the Github repository of the original project in [here](https://github.com/john-smilga/react-course-v3/tree/main/12-comfy-store).
