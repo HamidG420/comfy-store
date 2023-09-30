@@ -1,0 +1,44 @@
+import { useAppSelector } from '../RTKHooks';
+import { formatPrice } from '../utils';
+
+const CartTotals = () => {
+  const { cartTotal, shipping, tax, orderTotal } = useAppSelector(
+    (state) => state.cartState
+  );
+  return (
+    <div className="card bg-base-200">
+      <div className="card-body">
+        {/* SUBTOTAL */}
+        <p className="flex justify-between text-xs border-b border-base-300 pb-2">
+          <span>Subtotal</span>
+          <span className="font-medium">
+            {formatPrice(cartTotal.toString())}
+          </span>
+        </p>
+
+        {/* SHIPPING */}
+        <p className="flex justify-between text-xs border-b border-base-300 pb-2">
+          <span>Shipping</span>
+          <span className="font-medium">
+            {formatPrice(shipping.toString())}
+          </span>
+        </p>
+
+        {/* TAX */}
+        <p className="flex justify-between text-xs border-b border-base-300 pb-2">
+          <span>Tax</span>
+          <span className="font-medium">{formatPrice(tax.toString())}</span>
+        </p>
+
+        {/* ORDER TOTAL */}
+        <p className="flex justify-between text-sm mt-4">
+          <span>Order Total</span>
+          <span className="font-medium">
+            {formatPrice(orderTotal.toString())}
+          </span>
+        </p>
+      </div>
+    </div>
+  );
+};
+export default CartTotals;
