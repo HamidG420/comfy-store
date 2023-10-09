@@ -1,6 +1,7 @@
 # Comfy Store
 
-Project in Action:
+## Project in Action
+
 [Comfy Store](https://comfy-store-ts.netlify.app)
 
 ## Introduction
